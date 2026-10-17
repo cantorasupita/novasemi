@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NovaBMS — Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F5F2}
+a{color:#1A1A18}a:hover{color:#55554F}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px;box-sizing:border-box}
+.ph{background:repeating-linear-gradient(45deg,#E6E6E1 0 10px,#DDDDD8 10px 20px);border:1.5px dashed #8A8A84;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.5;color:#4A4A45;padding:16px;box-sizing:border-box}
+.ph b{font-weight:500;color:#1A1A18;font-size:13px}
+.dark .ph{background:repeating-linear-gradient(45deg,#353533 0 10px,#2E2E2C 10px 20px);border-color:#77776F;color:#C4C4BD}
+.dark .ph b{color:#F0F0EC}
+.tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#5E5E58;border:1px solid #A9A9A2;padding:4px 8px;display:inline-block;align-self:flex-start}
+.dark .tag{color:#C4C4BD;border-color:#77776F}
+.note{font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5E5E58;line-height:1.5}
+.dark .note{color:#B9B9B2}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 22px;border:1.5px solid #1A1A18;font-weight:600;font-size:15px;text-decoration:none;color:#1A1A18;box-sizing:border-box}
+.btn.solid{background:#1A1A18;color:#F5F5F2}
+.dark .btn{border-color:#F0F0EC;color:#F0F0EC}
+.dark .btn.solid{background:#F0F0EC;color:#1A1A18}
+.card{border:1.5px solid #1A1A18;padding:20px;display:flex;flex-direction:column;gap:8px;box-sizing:border-box;background:#FBFBF9}
+.h2{margin:0;font-size:40px;line-height:1.15;font-weight:700;letter-spacing:-.01em}
+.sub{margin:0;font-size:19px;line-height:1.5;color:#3E3E3A;max-width:780px}
+.dark .sub{color:#D2D2CC}
+.closing{margin:0;font-size:22px;font-weight:600;text-align:center}
+.range{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+</style>
+</head>
+<body>
+<div style="font-family: 'IBM Plex Sans', sans-serif; color: #1A1A18; background: #F5F5F2; min-height: 100vh;">
+
+<!-- HEADER -->
+<header style="border-bottom: 1.5px solid #1A1A18; background: #FBFBF9;">
+<div class="wrap" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; padding-top: 14px; padding-bottom: 14px;">
+<div class="ph" style="width: 150px; height: 40px; padding: 4px;">[NOVA LOGO]</div>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 6px 22px; flex: 1 1 520px; font-size: 15px;">
+<a href="index.html" style="font-weight: 600; text-decoration: underline;">Home</a>
+<a href="products.html" style="text-decoration: none;">Products / Technical</a>
+<a href="white-papers.html" style="text-decoration: none;">White Papers</a>
+<a href="#" style="text-decoration: none;">Articles</a>
+<a href="news.html" style="text-decoration: none;">In the News</a>
+<a href="seminars.html" style="text-decoration: none;">Register for Seminars</a>
+</nav>
+<a class="btn solid" href="products.html">Request Evaluation</a>
+</div>
+</header>
+
+<!-- A · HERO -->
+<section style="padding: 64px 0 72px; border-bottom: 1.5px solid #1A1A18;">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 20px;">
+<span class="tag">A · Hero + Traditional AFE vs. Complete BMS</span>
+<h1 style="margin: 0; font-size: 56px; line-height: 1.08; font-weight: 700; letter-spacing: -.02em; max-width: 900px;">NovaBMS — A Complete BMS. Not Just an AFE.</h1>
+<p class="sub">Powered by the NB1600: precision measurement, continuous coulomb counting, NovaEIS™, protection, balancing, and no firmware project.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px;">
+<a class="btn solid" href="products.html">Request Evaluation</a>
+<a class="btn" href="products.html">Explore Technical Details</a>
+</div>
+
+<h2 style="margin: 28px 0 0; font-size: 26px; font-weight: 600;">Traditional AFE vs. Complete BMS</h2>
+<p class="note" style="margin: 0;">↔ Drag the slider to compare the traditional AFE path with Nova’s NB1600 approach.</p>
+
+<div style="position: relative; height: 480px; border: 1.5px solid #1A1A18; overflow: hidden; background: #FBFBF9;">
+<!-- left / traditional (full width, under) -->
+<div style="position: absolute; inset: 0; display: flex; background: #E9E9E5;">
+<div style="width: 50%; box-sizing: border-box; padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<span class="tag">The AFE path</span>
+<div style="font-size: 24px; font-weight: 700;">Traditional AFE-Based BMS</div>
+<div style="font-size: 16px; color: #3E3E3A;">AFE + MCU + firmware + memory + months of integration</div>
+<div class="ph" style="flex: 1 1 auto; min-height: 160px;"><b>IMAGE</b>Инженеры, платы, отладка — «Months of development»</div>
+</div>
+</div>
+<!-- right / nova (clipped overlay) -->
+<div id="cmpRight" style="position: absolute; inset: 0; display: flex; justify-content: flex-end; background: #D6D6D0; clip-path: inset(0 0 0 50%);">
+<div style="width: 50%; box-sizing: border-box; padding: 28px; display: flex; flex-direction: column; gap: 12px; align-items: flex-end; text-align: right;">
+<span class="tag" style="align-self: flex-end;">The NB1600 path</span>
+<div style="font-size: 24px; font-weight: 700;">Nova NB1600</div>
+<div style="font-size: 16px; color: #3E3E3A;">Complete BMS + GUI configuration + hours to deployment</div>
+<div class="ph" style="flex: 1 1 auto; min-height: 160px; align-self: stretch;"><b>IMAGE</b>Ноутбук с GUI + плата NB1600 — «Configured in hours»</div>
+</div>
+</div>
+<!-- handle -->
+<div id="cmpHandle" aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: 50%; width: 0; border-left: 3px solid #1A1A18; pointer-events: none;">
+<div style="position: absolute; top: 50%; left: -30px; width: 56px; height: 56px; margin-top: -28px; border-radius: 28px; background: #1A1A18; color: #F5F5F2; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 18px; font-weight: 700;">‹ ›</div>
+</div>
+<input class="range" type="range" min="5" max="95" value="50" id="cmpRange" aria-label="Compare traditional AFE and NB1600">
+</div>
+<p class="note" style="margin: 0;">Слайдер: заметная круглая ручка со стрелками, контраст · текст внутри каждой половины · моб.: тянуть пальцем, по умолчанию 50/50 · fallback: статичная картинка.</p>
+</div>
+</section>
+
+<!-- B · PROOF IN NUMBERS -->
+<section class="dark" style="background: #222221; color: #F0F0EC; padding: 72px 0;">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 32px;">
+<span class="tag">B · Proof in Numbers · тёмный фон</span>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px;">
+<div style="border: 1.5px solid #77776F; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px;"><div style="font-size: 56px; font-weight: 700; line-height: 1;">1 mV</div><div style="font-size: 14px; color: #C4C4BD;">Cell Voltage Accuracy</div></div>
+<div style="border: 1.5px solid #77776F; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px;"><div style="font-size: 56px; font-weight: 700; line-height: 1;">0.02%</div><div style="font-size: 14px; color: #C4C4BD;">SOC Repeatability</div></div>
+<div style="border: 1.5px solid #77776F; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px;"><div style="font-size: 56px; font-weight: 700; line-height: 1;">100 µΩ</div><div style="font-size: 14px; color: #C4C4BD;">NovaEIS™ Resolution</div></div>
+<div style="border: 1.5px solid #77776F; padding: 28px 24px; display: flex; flex-direction: column; gap: 10px;"><div style="font-size: 56px; font-weight: 700; line-height: 1;">16 Cells</div><div style="font-size: 14px; color: #C4C4BD;">Simultaneous Measurement — Even When Stacked</div></div>
+</div>
+<p style="margin: 0; font-size: 18px; text-align: center; color: #E2E2DC;">Precision built into the architecture — not recovered later through filtering, oversampling, or firmware.</p>
+</div>
+</section>
+
+<!-- C · SILICON VALIDATION -->
+<section style="padding: 80px 0; border-bottom: 1.5px solid #1A1A18;">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 24px;">
+<span class="tag">C · Silicon Validation</span>
+<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 20px;">
+<h2 class="h2">Proven in silicon. Validated by customers.</h2>
+<ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; font-size: 18px; line-height: 1.45;">
+<li>NB1600 silicon validates the performance claims</li>
+<li>Customer evaluations across multiple markets</li>
+<li>Ongoing customer engagements</li>
+</ul>
+</div>
+<div class="ph" style="flex: 1 1 420px; height: 380px;"><b>3D ANIMATION</b>NB1600 package — вращение корпуса чипа<br>(нужна 3D-модель)</div>
+</div>
+</div>
+</section>
+
+<!-- D · NB1600 PRODUCT -->
+<section style="padding: 80px 0; border-bottom: 1.5px solid #1A1A18;">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 28px;">
+<span class="tag">D · NB1600 Product — «What exactly am I buying?»</span>
+<h2 class="h2">NB1600 — A Complete BMS on a Single Chip</h2>
+<p class="sub">The functions normally spread across an AFE, MCU, memory, and firmware stack — integrated into one device.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; align-items: stretch;">
+<div style="display: flex; flex-direction: column; gap: 20px;">
+<div class="card"><div style="font-size: 20px; font-weight: 700;">Measure</div><div style="font-size: 15px; line-height: 1.5; color: #3E3E3A;">Cell voltage, current, temperature, pack voltage, continuous coulomb counting, NovaEIS™</div></div>
+<div class="card"><div style="font-size: 20px; font-weight: 700;">Understand</div><div style="font-size: 15px; line-height: 1.5; color: #3E3E3A;">SOC, SOH, cell condition</div></div>
+</div>
+<div class="ph" style="min-height: 320px;"><b>IMAGE</b>NB1600 package — центральный визуал<br>One device → complete BMS functionality</div>
+<div style="display: flex; flex-direction: column; gap: 20px;">
+<div class="card"><div style="font-size: 20px; font-weight: 700;">Protect &amp; Manage</div><div style="font-size: 15px; line-height: 1.5; color: #3E3E3A;">Protection, balancing, open-wire detection, thermal safeguards, redundancy, diagnostics, self-checks</div></div>
+<div class="card"><div style="font-size: 20px; font-weight: 700;">Configure &amp; Retain</div><div style="font-size: 15px; line-height: 1.5; color: #3E3E3A;">Internal non-volatile memory, autonomous operation, GUI-based setup</div></div>
+</div>
+</div>
+<div style="border-top: 1.5px solid #1A1A18; padding-top: 20px; display: flex; flex-direction: column; gap: 8px;">
+<p style="margin: 0; font-size: 20px; font-weight: 600;">No external MCU required for core BMS operation.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: #3E3E3A; max-width: 820px;">The system MCU is free to focus on higher-level tasks such as AI algorithms, system control, communications, and housekeeping.</p>
+</div>
+</div>
+</section>
+
+<!-- E · NovaEIS -->
+<section class="dark" style="background: #222221; color: #F0F0EC; padding: 80px 0;">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 28px;">
+<span class="tag">E · NovaEIS™</span>
+<h2 class="h2">NovaEIS™ — Practical In-Circuit Battery Impedance</h2>
+<p class="sub">Real-time cell-health visibility without external excitation hardware, switching networks, or a separate EIS front end.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 16px; line-height: 1.55; color: #D2D2CC;">
+<p style="margin: 0; flex: 1 1 320px;">Conventional EIS is fundamentally difficult to use inside a live battery system.</p>
+<p style="margin: 0; flex: 2 1 480px;">NovaEIS™ is built on the opposite premise: use the battery’s own operating events, synchronized voltage and current measurement, and built-in analysis to extract impedance information in-circuit.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+<div style="border: 1.5px solid #77776F; padding: 20px; display: flex; flex-direction: column; gap: 10px;">
+<div class="note">01</div><div style="font-size: 20px; font-weight: 700;">Lab Equipment</div><div style="font-size: 14px; color: #C4C4BD;">Specialized setup, offline use, engineering overhead</div>
+<div class="ph" style="height: 150px;"><b>ICON / IMAGE</b>Лабораторный стенд</div>
+</div>
+<div style="border: 1.5px solid #77776F; padding: 20px; display: flex; flex-direction: column; gap: 10px;">
+<div class="note">02</div><div style="font-size: 20px; font-weight: 700;">System Integration</div><div style="font-size: 14px; color: #C4C4BD;">Added excitation, switching, processing burden, and complexity</div>
+<div class="ph" style="height: 150px;"><b>ICON / IMAGE</b>Доп. железо в системе</div>
+</div>
+<div style="border: 3px solid #F0F0EC; padding: 20px; display: flex; flex-direction: column; gap: 10px;">
+<div class="note">03</div><div style="font-size: 20px; font-weight: 700;">NovaEIS™</div><div style="font-size: 14px; color: #C4C4BD;">Built into the BMS, accessible directly in the GUI</div>
+<div class="ph" style="height: 150px;"><b>GUI CROP</b>Кнопка NovaEIS в интерфейсе (без лишнего chrome)</div>
+</div>
+</div>
+<p class="closing">Battery health. One click away.</p>
+</div>
+</section>
+
+<!-- F · DAA -->
+<section style="padding: 80px 0; border-bottom: 1.5px solid #1A1A18;">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 28px;">
+<span class="tag">F · DAA Architecture</span>
+<h2 class="h2">Digitally Assisted Analog — Precision Built Into the Architecture</h2>
+<p class="sub">A fundamentally different architecture that combines analog precision with digital intelligence at the point of measurement.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
+<div class="card">
+<div style="font-size: 20px; font-weight: 700;">Conventional Architecture</div>
+<div style="font-size: 15px; color: #3E3E3A;">Analog-heavy, complex, hard to scale, costly</div>
+<div class="ph" style="height: 220px;"><b>DIAGRAM</b>Conventional — блок-схема</div>
+</div>
+<div class="card" style="border-width: 3px;">
+<div style="font-size: 20px; font-weight: 700;">DAA Architecture</div>
+<div style="font-size: 15px; color: #3E3E3A;">Digitally assisted analog, balanced, scalable, efficient</div>
+<div class="ph" style="height: 220px;"><b>DIAGRAM</b>DAA — блок-схема</div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px;">
+<div style="border-top: 3px solid #1A1A18; padding-top: 14px; display: flex; flex-direction: column; gap: 8px;"><div class="ph" style="width: 48px; height: 48px; padding: 2px; font-size: 10px;">icon</div><div style="font-size: 17px; font-weight: 600;">Smaller, simpler analog</div></div>
+<div style="border-top: 3px solid #1A1A18; padding-top: 14px; display: flex; flex-direction: column; gap: 8px;"><div class="ph" style="width: 48px; height: 48px; padding: 2px; font-size: 10px;">icon</div><div style="font-size: 17px; font-weight: 600;">Reduced sensitivity to process, aging, and temperature</div></div>
+<div style="border-top: 3px solid #1A1A18; padding-top: 14px; display: flex; flex-direction: column; gap: 8px;"><div class="ph" style="width: 48px; height: 48px; padding: 2px; font-size: 10px;">icon</div><div style="font-size: 17px; font-weight: 600;">Highly scalable</div></div>
+<div style="border-top: 3px solid #1A1A18; padding-top: 14px; display: flex; flex-direction: column; gap: 8px;"><div class="ph" style="width: 48px; height: 48px; padding: 2px; font-size: 10px;">icon</div><div style="font-size: 17px; font-weight: 600;">Higher performance with less complexity</div></div>
+</div>
+<p class="closing">Precision is built into the architecture — not recovered later in firmware.</p>
+</div>
+</section>
+
+<!-- G · NOVA BMS SUITE -->
+<section style="padding: 80px 0; border-bottom: 1.5px solid #1A1A18; background: #ECECE8;">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 28px;">
+<span class="tag">G · NOVA BMS Suite</span>
+<h2 class="h2">NOVA BMS Suite — Configure the BMS, Not the Firmware</h2>
+<p class="sub">Set parameters, monitor operation, run diagnostics, and access NovaEIS™ from one interface.</p>
+<div class="ph" style="height: 460px;"><b>SCREENSHOT</b>Реальный скриншот NOVA BMS Suite<br>Command Console · NovaEIS™ · RAM / NVM Parameters · Commands · Monitoring<br>+ заполненный лог (виден, но не доминирует)</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px;">
+<div class="card"><div style="font-size: 18px; font-weight: 700;">Configure</div><div style="font-size: 14px; color: #3E3E3A;">RAM/NVM parameters, operating settings</div></div>
+<div class="card"><div style="font-size: 18px; font-weight: 700;">Monitor</div><div style="font-size: 14px; color: #3E3E3A;">Cells, current, temperatures, pack status</div></div>
+<div class="card"><div style="font-size: 18px; font-weight: 700;">Diagnose</div><div style="font-size: 14px; color: #3E3E3A;">Commands, logs, test results, self-checks</div></div>
+<div class="card"><div style="font-size: 18px; font-weight: 700;">Analyze</div><div style="font-size: 14px; color: #3E3E3A;">NovaEIS™, impedance, battery-health data</div></div>
+</div>
+<p class="closing">From first connection to a configured BMS in hours — not months.</p>
+</div>
+</section>
+
+<!-- H · APPLICATIONS -->
+<section style="padding: 80px 0; border-bottom: 1.5px solid #1A1A18;">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 28px;">
+<span class="tag">H · Applications</span>
+<h2 class="h2">One BMS Architecture. Multiple Markets.</h2>
+<p class="sub">Designed for systems that need precision, safety, health visibility, and reduced development complexity.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px;">
+<div style="display: flex; flex-direction: column; gap: 10px;"><div class="ph" style="height: 170px;"><b>IMAGE</b></div><div style="font-size: 16px; font-weight: 600;">EV / eMobility</div></div>
+<div style="display: flex; flex-direction: column; gap: 10px;"><div class="ph" style="height: 170px;"><b>IMAGE</b></div><div style="font-size: 16px; font-weight: 600;">Energy Storage Systems</div></div>
+<div style="display: flex; flex-direction: column; gap: 10px;"><div class="ph" style="height: 170px;"><b>IMAGE</b></div><div style="font-size: 16px; font-weight: 600;">Industrial &amp; Robotics</div></div>
+<div style="display: flex; flex-direction: column; gap: 10px;"><div class="ph" style="height: 170px;"><b>IMAGE</b></div><div style="font-size: 16px; font-weight: 600;">Light Electric Vehicles / eBike</div></div>
+<div style="display: flex; flex-direction: column; gap: 10px;"><div class="ph" style="height: 170px;"><b>IMAGE</b></div><div style="font-size: 16px; font-weight: 600;">Specialty Battery Systems</div></div>
+</div>
+<p class="closing">One architecture. From light mobility to large-scale energy storage.</p>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="dark" style="background: #222221; color: #F0F0EC; padding: 96px 0;">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 20px; align-items: center; text-align: center;">
+<span class="tag" style="align-self: center;">Final CTA</span>
+<h2 class="h2">Ready to Evaluate NovaBMS?</h2>
+<p class="sub">See what the NB1600 can do in your battery system.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+<a class="btn solid" href="products.html">Request Evaluation</a>
+<a class="btn" href="products.html">Explore Technical Details</a>
+</div>
+<p class="note" style="margin: 0;">Samples, technical collateral, and engineering support are available through direct engagement.</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #FBFBF9; border-top: 1.5px solid #1A1A18; padding: 40px 0;">
+<div class="wrap" style="display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-start; justify-content: space-between;">
+<div class="ph" style="width: 150px; height: 40px; padding: 4px;">[NOVA LOGO]</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 14px;">
+<a href="index.html">Home</a><a href="products.html">Products / Technical</a><a href="white-papers.html">White Papers</a><a href="#">Articles</a><a href="news.html">In the News</a><a href="seminars.html">Register for Seminars</a>
+</nav>
+<div class="note">[Контакты · © Nova Semiconductor] — футер в брифе не описан</div>
+</div>
+</footer>
+
+</div>
+<script>
+(function () {
+  var r = document.getElementById('cmpRange');
+  var right = document.getElementById('cmpRight');
+  var handle = document.getElementById('cmpHandle');
+  if (!r || !right || !handle) return;
+  function upd() { var p = r.value; right.style.clipPath = 'inset(0 0 0 ' + p + '%)'; handle.style.left = p + '%'; }
+  r.addEventListener('input', upd); upd();
+})();
+</script>
+</body>
+</html>
